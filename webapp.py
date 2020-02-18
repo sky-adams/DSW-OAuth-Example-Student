@@ -57,7 +57,7 @@ def authorized():
     else:
         try:
             #save user data and set log in message
-        except Exception as inst::
+        except Exception as inst:
             #clear the session and give error message
     return render_template('message.html', message=message)
 
