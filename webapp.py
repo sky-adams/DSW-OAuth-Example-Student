@@ -57,7 +57,7 @@ def authorized():
     else:
         try:
             #save user data and set log in message
-        except:
+        except Exception as inst::
             #clear the session and give error message
     return render_template('message.html', message=message)
 
@@ -76,7 +76,7 @@ def renderPage2():
 
 @github.tokengetter
 def get_github_oauth_token():
-    return session.get('github_token')
+    return session['github_token']
 
 
 if __name__ == '__main__':
